@@ -1,0 +1,95 @@
+#include "cqut_rviz_plugin/turn_signals_display.hpp"
+
+#include <QFontDatabase>
+#include <QPainter>
+#include <ament_index_cpp/get_package_share_directory.hpp>
+#include <rviz_rendering/render_system.hpp>
+
+#include <OgreHardwarePixelBuffer.h>
+#include <OgreMaterialManager.h>
+#include <OgreTechnique.h>
+#include <OgreTexture.h>
+#include <OgreTextureManager.h>
+
+#include <algorithm>
+#include <cmath>
+#include <iomanip>
+#include <memory>
+#include <string>
+
+namespace cqut_overlay_rviz_plugin
+{
+
+TurnSignalsDisplay::TurnSignalsDisplay() : current_turn_signal_(0)
+{
+  last_toggle_time_ = std::chrono::steady_clock::now();
+
+  // Load the arrow image
+  std::string package_path =
+    ament_index_cpp::get_package_share_directory("cqut_rviz_plugin");
+  std::string image_path = package_path + "/assets/images/arrow.png";
+  arrowImage.load(image_path.c_str());
+}
+
+void TurnSignalsDisplay::updateTurnSignalsData(
+  const cqut_msg::msg::State::ConstSharedPtr & msg)
+{
+  try {
+    // Assuming msg->report is the field you're interested in
+    current_turn_signal_ = msg->vy;
+    if(current_turn_signal_ > -0.05 && current_turn_signal_ < 0.05)
+      current_turn_signal_ = 0;
+  } catch (const std::exception & e) {
+    // Log the error
+    std::cerr << "Error in processMessage: " << e.what() << std::endl;
+  }
+}
+
+void TurnSignalsDisplay::drawArrows(
+  QPainter & painter, const QRectF & backgroundRect, const QColor & color)
+{
+  QImage scaledLeftArrow = arrowImage.scaled(50, 32, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+  scaledLeftArrow = coloredImage(scaledLeftArrow, gray);
+  QImage scaledRightArrow = scaledLeftArrow.mirrored(true, false);
+  int arrowYPos = (backgroundRect.height() / 2 - scaledLeftArrow.height() / 2 - 4);
+  int leftArrowXPos = backgroundRect.left() + scaledLeftArrow.width() * 2 + 90;
+  int rightArrowXPos = backgroundRect.right() - scaledRightArrow.width() * 3 - 85;
+
+  bool leftActive = current_turn_signal_ > 0;
+  bool rightActive = current_turn_signal_ < 0;
+
+  // Color the arrows based on the state of the turn signals and hazard lights by having them blink
+  // on and off
+  if (this->blink_on_) {
+    if (leftActive) {
+      scaledLeftArrow = coloredImage(scaledLeftArrow, color);
+    }
+    if (rightActive) {
+      scaledRightArrow = coloredImage(scaledRightArrow, color);
+    }
+  }
+
+  // Draw the arrows
+  painter.drawImage(QPointF(leftArrowXPos, arrowYPos), scaledLeftArrow);
+  painter.drawImage(QPointF(rightArrowXPos, arrowYPos), scaledRightArrow);
+
+  auto now = std::chrono::steady_clock::now();
+  if (
+    std::chrono::duration_cast<std::chrono::milliseconds>(now - last_toggle_time_) >=
+    blink_interval_) {
+    blink_on_ = !blink_on_;  // Toggle the blink state
+    last_toggle_time_ = now;
+  }
+}
+
+QImage TurnSignalsDisplay::coloredImage(const QImage & source, const QColor & color)
+{
+  QImage result = source;
+  QPainter p(&result);
+  p.setCompositionMode(QPainter::CompositionMode_SourceAtop);
+  p.fillRect(result.rect(), color);
+  p.end();
+  return result;
+}
+
+}  // namespace cqut_overlay_rviz_plugin

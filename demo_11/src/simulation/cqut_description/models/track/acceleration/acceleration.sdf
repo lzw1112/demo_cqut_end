@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sdf version="1.4">
+  <model name="some track">
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>5.0 -1.9 0 0 0 0</pose>
+      <name>cone_right1</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>10.0 -1.9 0 0 0 0</pose>
+      <name>cone_right2</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>15.0 -1.9 0 0 0 0</pose>
+      <name>cone_right3</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>20.0 -1.9 0 0 0 0</pose>
+      <name>cone_right4</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>25.0 -1.9 0 0 0 0</pose>
+      <name>cone_right5</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>30.0 -1.9 0 0 0 0</pose>
+      <name>cone_right6</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>35.0 -1.9 0 0 0 0</pose>
+      <name>cone_right7</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>40.0 -1.9 0 0 0 0</pose>
+      <name>cone_right8</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>45.0 -1.9 0 0 0 0</pose>
+      <name>cone_right9</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>50.0 -1.9 0 0 0 0</pose>
+      <name>cone_right10</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>55.0 -1.9 0 0 0 0</pose>
+      <name>cone_right11</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>60.0 -1.9 0 0 0 0</pose>
+      <name>cone_right12</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>65.0 -1.9 0 0 0 0</pose>
+      <name>cone_right13</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_blue</uri>
+        <pose>70.0 -1.9 0 0 0 0</pose>
+      <name>cone_right14</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>5.0 1.9 0 0 0 0</pose>
+      <name>cone_left1</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>10.0 1.9 0 0 0 0</pose>
+      <name>cone_left2</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>15.0 1.9 0 0 0 0</pose>
+      <name>cone_left3</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>20.0 1.9 0 0 0 0</pose>
+      <name>cone_left4</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>25.0 1.9 0 0 0 0</pose>
+      <name>cone_left5</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>30.0 1.9 0 0 0 0</pose>
+      <name>cone_left6</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>35.0 1.9 0 0 0 0</pose>
+      <name>cone_left7</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>40.0 1.9 0 0 0 0</pose>
+      <name>cone_left8</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>45.0 1.9 0 0 0 0</pose>
+      <name>cone_left9</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>50.0 1.9 0 0 0 0</pose>
+      <name>cone_left10</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>55.0 1.9 0 0 0 0</pose>
+      <name>cone_left11</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>60.0 1.9 0 0 0 0</pose>
+      <name>cone_left12</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>65.0 1.9 0 0 0 0</pose>
+      <name>cone_left13</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>70.0 1.9 0 0 0 0</pose>
+      <name>cone_left14</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>80.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow1</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>80.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow2</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>85.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow3</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>85.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow4</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>90.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow5</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>90.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow6</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>95.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow7</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>95.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow8</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>100.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow9</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>100.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow10</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>105.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow11</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>105.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow12</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>110.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow13</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>110.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow14</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>115.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow15</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>115.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow16</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>120.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow17</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>120.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow18</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>125.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow19</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>125.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow20</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>130.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow21</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>130.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow22</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>135.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow23</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>135.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow24</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>140.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow25</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>140.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow26</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>145.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow27</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>145.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow28</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>150.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow29</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>150.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow30</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>155.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow31</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>155.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow32</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>160.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow33</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>160.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow34</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>165.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow35</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>165.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow36</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>170.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow37</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>170.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow38</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>175.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow39</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>175.0 -1.9 0 0 0 0</pose>
+      <name>cone_yellow40</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>175.0 0.0 0 0 0 0</pose>
+      <name>cone_yellow41</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_yellow</uri>
+        <pose>175.0 1.9 0 0 0 0</pose>
+      <name>cone_yellow42</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>-0.3 1.9 0 0 0 0</pose>
+      <name>cone_orange_big1</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>-0.3 -1.9 0 0 0 0</pose>
+      <name>cone_orange_big2</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>0.3 1.9 0 0 0 0</pose>
+      <name>cone_orange_big3</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>0.3 -1.9 0 0 0 0</pose>
+      <name>cone_orange_big4</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>74.7 1.9 0 0 0 0</pose>
+      <name>cone_orange_big5</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>74.7 -1.9 0 0 0 0</pose>
+      <name>cone_orange_big6</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>75.3 1.9 0 0 0 0</pose>
+      <name>cone_orange_big7</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/cone_orange_big</uri>
+        <pose>75.3 -1.9 0 0 0 0</pose>
+      <name>cone_orange_big8</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/time_keeping</uri>
+        <pose>0.0 2.4 0 0 0 0</pose>
+      <name>tk_device_0</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/time_keeping</uri>
+        <pose>0.0 -2.4 0 0 0 0</pose>
+      <name>tk_device_1</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/time_keeping</uri>
+        <pose>75.0 2.4 0 0 0 0</pose>
+      <name>tk_device_2</name>
+    </include>
+    <include>
+      <uri>model://cqut_description/models/time_keeping</uri>
+        <pose>75.0 -2.4 0 0 0 0</pose>
+      <name>tk_device_3</name>
+    </include>
+  </model>
+</sdf>

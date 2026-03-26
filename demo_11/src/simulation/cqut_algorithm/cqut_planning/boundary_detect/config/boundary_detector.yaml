@@ -1,0 +1,21 @@
+/boundaryDetector:
+  ros__parameters:
+    beam_weight/w_c: 1.0
+    beam_weight/w_d: 0.25
+    beam_weight/w_k: 0.5
+    beam_weight/w_w: 0.25
+    boundary_detections_topic_name: /planning/boundary_detections
+    local_map_topic_name: /local_map
+    max_beam_cost: 1.5
+    max_iter_num: 4
+    max_search_num: 3
+    node_rate: 50
+    path_weight/w_b: 0.2
+    path_weight/w_c: 0.4
+    path_weight/w_k: 0.4
+    path_weight/w_r: 0.2
+    path_weight/w_w: 0.2
+    visual_boundary_topic_name: /visualization/visual_boundary
+    visual_path_topic_name: /visualization/visual_path
+    visual_tree_topic_name: /visualization/visual_tree
+    visual_triangles_topic_name: /visualization/visual_triangles

@@ -1,0 +1,15 @@
+/cqut_interface:
+  ros__parameters:
+    pub/cmd: "/cqut/cmd"
+    pub/lidar_cluster: "/perception/lidar_cluster"
+    pub/localmap: /local_map
+    pub/map: /map
+    pub/state: "/estimation/slam/state"
+    sub/cluster: "/lidar/cones"
+    sub/cmd: "/control/pure_pursuit/control_command"
+    sub/cones: "/camera/cones"
+    sub/topic_odom: "/cqut/base_pose_ground_truth"
+    sub/track: "/cqut/track"
+    tf/base_link: base_link
+    tf/origin: map
+    tf/publish_car_base_link: false

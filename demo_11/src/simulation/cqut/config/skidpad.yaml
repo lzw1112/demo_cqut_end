@@ -1,0 +1,13 @@
+robot_name: sj 
+track_name: skidpad
+# skidpad.sdf  acceleration.sdf   FSAC.sdf
+
+####################################
+######## Possible Tracks ###########
+####################################
+# FSG.sdf 
+# FSI.sdf
+# FSAC.sdf
+# thin.sdf 
+# skidpad.sdf 
+# acceleration.sdf 

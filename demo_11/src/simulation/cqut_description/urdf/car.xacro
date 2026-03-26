@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="$(arg robot_name)" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="robot_sensors" value="${xacro.load_yaml('$(arg sensors_config_file)')}"/>
+    <xacro:property name="car_settings" value="${xacro.load_yaml('$(arg car_config_file)')}"/>
+    <xacro:property name="distance_settings" value="${xacro.load_yaml('$(arg car_dimensions_file)')}"/>
+
+    <xacro:include filename="$(find cqut_description)/urdf/vehicle_friction.gazebo"/>
+    <xacro:include filename="$(find cqut_description)/urdf/materials.xacro"/>
+    <xacro:include filename="$(find cqut_description)/urdf/vehicle_body.xacro"/>
+    <xacro:include filename="$(find cqut_description)/urdf/sensors.xacro"/>
+    <xacro:include filename="$(find cqut_description)/urdf/plugins.gazebo"/>
+
+    <xacro:body_chassis/>
+    <xacro:body_left_rear_wheel/>
+    <xacro:body_right_rear_wheel/>
+    <xacro:body_left_front_wheel/>
+    <xacro:body_right_front_wheel/>
+
+    <xacro:if value="${robot_sensors['sensors']['lidar_pipeline']['enabled']}">
+        <xacro:lidar_pipeline/>
+    </xacro:if>
+
+    <xacro:if value="${robot_sensors['sensors']['camera_pipeline']['enabled']}">
+        <xacro:camera_pipeline/>
+    </xacro:if>
+
+    <xacro:if value="${robot_sensors['sensors']['camera']['enabled']}">
+        <xacro:camera_link_left/>
+    </xacro:if>
+
+    <xacro:if value="${robot_sensors['sensors']['camera']['enabled']}">
+        <xacro:camera_link_right/>
+    </xacro:if>
+
+    <xacro:if value="${robot_sensors['sensors']['lidar']['enabled']}">
+        <xacro:lidar_link/>
+    </xacro:if>
+
+</robot>

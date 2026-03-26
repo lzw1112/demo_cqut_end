@@ -1,0 +1,7 @@
+/line_detector:
+  ros__parameters:
+    allow_angle_error: 1.0
+    end_point_topic_name: /planning/end_point
+    lidar_cluster_topic_name: /perception/lidar_cluster
+    node_rate: 50
+    path_length: 82.0

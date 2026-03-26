@@ -1,0 +1,42 @@
+base_link:
+  cog:
+    x: 0
+    y: 0
+    z: 0.05
+
+cog:
+  chassis:
+    x: 0.8109
+    y: 0
+    z: -0.048
+
+chassis:
+  left_rear_wheel_joint:
+    x: -1.59
+    y: 0.6
+    z: 0.232
+  right_rear_wheel_joint:
+    x: -1.59
+    y: -0.6
+    z: 0.232
+  left_steering_hinge_joint:
+    x: 0
+    y: 0.61
+    z: 0.232
+  right_steering_hinge:
+    x: 0
+    y: -0.61
+    z: 0.232
+
+
+left_steering_hinge:
+  left_front_wheel:
+    x: 0
+    y: 0
+    z: 0
+
+right_steering_hinge:
+  right_front_wheel:
+    x: 0
+    y: 0
+    z: 0

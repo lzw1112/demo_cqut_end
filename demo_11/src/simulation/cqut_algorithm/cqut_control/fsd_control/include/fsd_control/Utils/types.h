@@ -1,0 +1,63 @@
+#pragma once
+
+#include <iostream>
+#include "opencv2/opencv.hpp"
+
+// ros package
+#include <std_msgs/msg/float64_multi_array.hpp>
+
+// custom messages
+#include "cqut_msg/msg/car_state.hpp"
+#include "cqut_msg/msg/control_command.hpp"
+#include "cqut_msg/msg/map.hpp"
+
+// STL
+#include <cmath>
+#include <vector>
+
+namespace ns_control 
+{
+    struct VehicleState 
+    {
+        double x;
+        double y;
+        double yaw;
+        double v;
+        double r;
+        double a;
+        double w;
+        double Delta;
+        double D;
+
+        VehicleState(cqut_msg::msg::CarState state, cqut_msg::msg::ControlCommand cmd) 
+        {
+            x = state.car_state.x;
+            y = state.car_state.y;
+            yaw = state.car_state.theta;
+            v = std::hypot(state.car_state_dt.car_state_dt.x, state.car_state_dt.car_state_dt.y);
+            r = state.car_state_dt.car_state_dt.theta;
+            a = std::hypot(state.car_state_dt.car_state_a.x, state.car_state_dt.car_state_a.y);
+            w = state.car_state_dt.car_state_a.theta;
+
+            D = cmd.throttle.data;
+            Delta = cmd.steering_angle.data;
+        }
+
+        VehicleState() 
+        {
+        }
+    };
+
+    struct TrajectoryPoint 
+    {
+        cv::Point2f pts;
+        double yaw;
+        double curvature;
+        double velocity;
+        double r;
+        double acc;
+    };
+
+    typedef std::vector<TrajectoryPoint> Trajectory;
+
+} // namespace ns_control

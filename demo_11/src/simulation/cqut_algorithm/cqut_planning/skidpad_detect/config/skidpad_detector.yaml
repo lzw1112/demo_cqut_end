@@ -1,0 +1,11 @@
+/skidpad_detector:
+  ros__parameters:
+    cluster_filtered_topic_name: /perception/lidar_cluster
+    length/lidar2imu: 1.87
+    length/start: 15.0
+    length/threshold: 0.7
+    node_rate: 50
+    path/path_x: /home/lzw/demo_11/src/simulation/cqut_algorithm/cqut_planning/skidpad_detect/config/path_x.txt
+    path/path_y: /home/lzw/demo_11/src/simulation/cqut_algorithm/cqut_planning/skidpad_detect/config/path_y.txt
+    path/skidpad_map: /home/lzw/demo_11/src/simulation/cqut_algorithm/cqut_planning/skidpad_detect/config/skidpad.pcd
+    transform_matrix_topic_name: /transform_matrix

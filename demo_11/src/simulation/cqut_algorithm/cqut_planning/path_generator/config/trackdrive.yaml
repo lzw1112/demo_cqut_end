@@ -1,0 +1,22 @@
+/path_generator:
+  ros__parameters:
+    N: 40
+    car_length: 1.88
+    car_state_topic_name: /estimation/slam/state
+    circle_radius: 9.125
+    desire_vel: 15.0
+    dt: 0.04
+    end_point_topic_name: /planning/end_point
+    forward_distance: 15.0
+    initial_velocity: 2.0
+    interval: 0.05
+    map_topic_name: /map
+    max_lat_acc: 3.0
+    mission: trackdrive # [trackdrive, skidpad, acceleration]
+    node_rate: 100
+    path_generate_topic_name: /planning/ref_path
+    ref_path_topic_name: /visual/ref_path
+    simulation: true
+    transform_matrix_topic_name: /transform_matrix
+    look_ahead: 20
+
